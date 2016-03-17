@@ -4,7 +4,11 @@
 puppet apply --modulepath modules test01-mod01.pp
 echo
 echo
-# Testing the 'defined' function
-puppet apply --modulepath modules test01-test-defined.pp
+
+# Testing the 'if defined' function
+puppet apply --modulepath modules test01-test-if-defined.pp
 echo
 echo
+
+# Testing the define function
+puppet apply --modulepath modules test01-test-defined-function.pp
