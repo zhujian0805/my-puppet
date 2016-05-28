@@ -1,5 +1,5 @@
 class cuser {
-    ensure_resource('user', 'dan', {'ensure' => 'present' , gid => '146' })
+    ensure_resource('user', 'dan', {'ensure' => 'present' , uid => '666' })
 }
 
 include stdlib
