@@ -12,3 +12,6 @@ echo
 
 # Testing the define function
 puppet apply --modulepath modules test01-test-defined-function.pp
+
+# Dump all facts to file
+sudo puppet apply debugging/dump_all_facts_file.pp
