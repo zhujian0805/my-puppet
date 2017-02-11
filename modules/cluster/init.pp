@@ -1,8 +1,10 @@
 class { 'corosync':
-  authkey        => '/var/lib/puppet/ssl/certs/ca.pem',
-  bind_address   => $::ipaddress,
-  cluster_name   => 'mycluster',
-  enable_secauth => true,
+  log_stderr        => false,
+  cluster_name      => 'mycluster',
+  log_function_name => true,
+  syslog_priority   => 'debug',
+  bind_address   => $::ipaddress_enp1s0,
+  debug             => true,
 }
 
 corosync::service { 'pacemaker':
