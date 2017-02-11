@@ -1,4 +1,5 @@
 class { 'corosync':
+  enable_secauth    => false,
   log_stderr        => false,
   cluster_name      => 'mycluster',
   log_function_name => true,
