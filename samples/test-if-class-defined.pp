@@ -6,6 +6,7 @@ class test01 {
 }
 
 class test01::fucking {
+    notify { "name is ----> $name": }
     notify {'oh yes, its test01::fucking included!!':}
 }
 
