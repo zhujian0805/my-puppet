@@ -15,3 +15,9 @@ puppet apply --modulepath modules test01-test-defined-function.pp
 
 # Dump all facts to file
 sudo puppet apply debugging/dump_all_facts_file.pp
+
+# Some examples
+# https://docs.puppet.com/puppet/latest/man/apply.html
+puppet apply -l /tmp/manifest.log manifest.pp
+puppet apply --modulepath=/root/dev/modules -e "include ntpd::server"
+puppet apply --catalog catalog.json
