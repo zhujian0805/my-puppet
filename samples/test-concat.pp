@@ -4,7 +4,9 @@ class cct {
 	}
 	
 	concat::fragment { 'tmpfile':
-	  target  => '/tmp/file'
+	  target  => '/tmp/file',
 	  content => 'test contents',
 	}
 }
+
+include cct
